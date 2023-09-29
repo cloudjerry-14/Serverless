@@ -8,10 +8,10 @@ RUN cd /workspace \
     
 # Install AWS SAM CLI tool
 RUN cd /workspace \
-    && curl "https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip" \
+    && curl -L "https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip -o aws-sam-cli-linux-x86_64.zip" \
     && unzip aws-sam-cli-linux-x86_64.zip -d sam-installation \
     && sudo ./sam-installation/install
-
+    
 ## Install Terraform
 RUN cd /workspace \
     &&  wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg \
