@@ -17,3 +17,5 @@ vscode:
     - ms-toolsai.vscode-jupyter-cell-tags
     - ms-toolsai.vscode-jupyter-slideshow
     - redhat.ansible
+    - ms-toolsai.jupyter-keymap
+    - ms-toolsai.jupyter-renderers
